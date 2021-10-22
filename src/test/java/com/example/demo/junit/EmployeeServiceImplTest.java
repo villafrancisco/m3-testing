@@ -128,7 +128,7 @@ class EmployeeServiceImplTest {
         void saveIdNullTest(){
 
 
-            Employee employee=new Employee(1L,"Francisco",40);
+            Employee employee=new Employee(null,"Francisco",40);
 
             assertEquals(3, service.count());
             Employee result = service.save(employee);
